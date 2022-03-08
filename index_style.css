@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2vmin;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerWrapper{
+  background-color: black;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  align-items:center;
+  justify-content:flex-start;
+  background-image: url('filmfootage_background.JPG');
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Gill Sans", sans-serif;;
+  background: -webkit-linear-gradient(#eec170, #fefae0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size:1em;
+  font-family: "Gill Sans", sans-serif;;
+  background: -webkit-linear-gradient(right, #9e2a2b, #e09f3e, #335c67);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -5px;
+
+}
+
+
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  background-image: url('man_with_camera.JPG');
+  background-size: cover;
+  background-position: center;
+}
+.navMenu {
+  display: flex;
+  width: 80vmin;
+  justify-content: space-between;
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+}
+a,a: before {
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FFC551;
+  color: white;
+}
+
+a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #FFC551;
+  text-shadow: 0 0 5px #FFC551;
+}
+.navLink{
+  padding: 10px;
+  border-style: dashed;
+  border-color: white;
+}

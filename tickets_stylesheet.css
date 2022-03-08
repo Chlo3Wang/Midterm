@@ -1,0 +1,123 @@
+body {
+  /*margin: 0px;
+  padding: 0px;*/
+  background-color: black;
+  font-family: 'Fugue', 'fugueregular', arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  overflow-x: hidden;
+  letter-spacing: .05em;
+}
+
+.header{
+     overflow: hidden;
+     text-align: center;
+     color: white;
+     font-size: 2vmin;
+     font-family: 'Inconsolata', monospace;
+     text-transform: capitalize;
+     margin-top: 3vh;
+ }
+.header > h1{
+    position: relative;
+    display: inline-block;
+}
+.header > h1:before, .header > h1:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+.header > h1:before{
+    right: 100%;
+}
+.header > h1:after{
+    left: 100%;
+}
+
+.main_content{
+  position: relative;
+  text-align: center;
+}
+.main_content img{
+  height: 50vh;
+  width: 80%;
+  object-fit:contain;
+}
+
+.quotes{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  line-break: auto;
+  margin-right: 3vw;
+  width: 45vw;
+  color: white;
+  font-size: 1.5vmin;
+  font-family: monospace;
+}
+
+.allfilms{
+  display: block;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    margin: 20px 0 25px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-shadow: black;
+    line-height: 46px;
+    color: black;
+    background: url('filmstrips.JPG') center top no-repeat;
+    background-size: 1400px 46px;
+}
+a, a:visited {
+    outline: none;
+    color: #2A317D;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.film{
+    margin-left: 110px;
+    padding-left: 100px;
+    border: 2px dashed white;
+    padding: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 80vw;
+}
+
+.film img {
+    margin-right: 20px;
+    margin-left: 200px;
+    float: left;
+    width: 330px;
+    height: 177px;
+    padding-right: 80px;
+}
+
+.film h3, .film p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .05em;
+}
+.film h3{
+  font-size: 2vmin;
+  padding: 10px;
+  font-family: "Andale Mono", monospace;
+  font-weight: 300;
+}
+.film p{
+  font-family: "Andale Mono", monospace;
+}

@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  /*margin: 0px;
+  padding: 0px;*/
+  background-color: black;
+  font-family: 'Fugue', 'fugueregular', arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  overflow-x: hidden;
+  letter-spacing: .05em;
+}
+
+.header{
+     overflow: hidden;
+     text-align: center;
+     color: white;
+     font-size: 2vmin;
+     font-family: 'Inconsolata', monospace;
+     text-transform: capitalize;
+     margin-top: 3vh;
+ }
+.header > h1{
+    position: relative;
+    display: inline-block;
+}
+.header > h1:before, .header > h1:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+.header > h1:before{
+    right: 100%;
+}
+.header > h1:after{
+    left: 100%;
+}
+.archives{
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 30vmin;
+  margin-left: 10vw;
+  margin-top: 5vw;
+  background-image: linear-gradient(#e7aa18, #992c2d, #101f2f);
+}
+.archive-title{
+  display: flex;
+  justify-content: center;
+}
+.archive-title h1{
+  color: black;
+  font-family: Andale Mono, monospace;
+  font-weight: bolder;
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 50px;
+  padding-top: -100px;
+}
+/*archive gallery*/
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    padding: 12px;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 5px 5px transparent;
+    transition: all 0.5s;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.767);
+}
+h2{
+  position: relative;
+  top: 17px;
+  left: 20px;
+  color: white;
+}
+a {
+    font-family: lato;
+    text-decoration: none;
+}
+
+
+img:hover {
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
+    transform: scale(1.02);
+    transition: all 0.5s;
+}
+
+p {
+    text-align: center;
+    font-family: lato;
+    font-size: 25px;
+}
+
+p::before {
+    content: "";
+    display: block;
+    border-top: black dashed 2px;
+    margin: 50px 0;
+}

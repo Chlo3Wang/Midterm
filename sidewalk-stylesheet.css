@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+     overflow: hidden;
+     text-align: center;
+     color: white;
+     font-size: 2vmin;
+     font-family: 'Inconsolata', monospace;
+     text-transform: capitalize;
+     height: 10vmin;
+     background-color: black;
+ }
+.header > h1{
+    position: relative;
+    display: inline-block;
+}
+.header > h1:before, .header > h1:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+.header > h1:before{
+    right: 100%;
+}
+.header > h1:after{
+    left: 100%;
+}
+.title {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: #CCC;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Courier New, monospace;
+  letter-spacing: 17.5px;
+}
+
+.one {
+  top: 0;
+  position: absolute;
+  width: 60%;
+  background-color: black;
+  height: 100vh;
+  clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+  z-index: 1;
+  background-image:url('sidewalk2.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  background-color: green;
+  height: 100vh;
+  background-image:url('sidewalk1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-title {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: -webkit-linear-gradient(#3d43c2, #f5eac8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: dashed;
+}
+
+.header-primary {
+  font-size: 2em;
+  display: block;
+  font-weight: 700;
+}
